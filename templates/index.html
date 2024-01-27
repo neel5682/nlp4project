@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Speech to Text</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Text Application</h1>
+
+        <form action="{{ url_for('home') }}" method="post">
+            <button type="submit" name="action" value="record">Record Text</button>
+            <button type="submit" name="action" value="speak">Speak Text</button>
+            <input type="text" name="text_to_speak" placeholder="Enter text to speak">
+            <button type="submit" name="action" value="subtitle">Video to Subtitle</button>
+            <button type="submit" name="action" value="audio">Video to Audio</button>
+            <button type="submit" name="action" value="text">Video to Text</button>
+        </form>
+    </div>
+</body>
+</html>

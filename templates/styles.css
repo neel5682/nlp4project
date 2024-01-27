@@ -1,0 +1,41 @@
+/* static/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    box-sizing: border-box;
+}
